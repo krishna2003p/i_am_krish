@@ -1,18 +1,40 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Adjust the threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-white to-transparent">
-      <nav className="container mx-auto flex items-center justify-between px-6 py-4">
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+      }`}
+    >
+      <nav className="container mx-auto flex items-center justify-between px-6 py-2">
         {/* Logo */}
-        <a href="#home" className="text-2xl font-bold text-gray-900">
+        <a
+          href="#home"
+          className={`text-4xl font-bold font-baloo transition-colors duration-300 ${
+            isScrolled ? "text-[#695AA6]" : "text-white"
+          }`}
+        >
           Krishna
         </a>
 
@@ -22,18 +44,18 @@ export default function Header() {
           className="lg:hidden flex flex-col items-center justify-center w-10 h-10 focus:outline-none"
         >
           <span
-            className={`block w-6 h-0.5 bg-gray-800 transition-transform ${
-              isMenuOpen ? "rotate-45 translate-y-2" : ""
+            className={`block w-6 h-0.5 transition-transform ${
+              isMenuOpen ? "bg-[#695AA6] rotate-45 translate-y-2" : "bg-gray-800"
             }`}
           ></span>
           <span
-            className={`block w-6 h-0.5 bg-gray-800 my-1 ${
-              isMenuOpen ? "opacity-0" : ""
+            className={`block w-6 h-0.5 my-1 transition-all ${
+              isMenuOpen ? "opacity-0" : "bg-gray-800"
             }`}
           ></span>
           <span
-            className={`block w-6 h-0.5 bg-gray-800 transition-transform ${
-              isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+            className={`block w-6 h-0.5 transition-transform ${
+              isMenuOpen ? "bg-[#695AA6] -rotate-45 -translate-y-2" : "bg-gray-800"
             }`}
           ></span>
         </button>
@@ -44,26 +66,23 @@ export default function Header() {
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           } lg:static lg:transform-none lg:flex lg:items-center lg:w-auto lg:bg-transparent lg:shadow-none`}
         >
-          {["Home", "About", "Portfolio", "Testimonial", "Blog", "Contact"].map(
+          {["Home", "About", "Portfolio", "Contact"].map(
             (section) => (
-              <li key={section} className="my-4 lg:my-0">
+              <li
+                key={section}
+                className={`text-center font-baloo my-4 p-2 lg:my-0 transition-colors duration-300 ${
+                  isScrolled ? "text-[#695AA6]" : "text-gray-800 lg:text-white"
+                }`}
+              >
                 <a
                   href={`#${section.toLowerCase()}`}
-                  className="block text-gray-800 hover:text-gray-600 lg:text-white"
+                  className="block hover:text-[#523D85] transition-all"
                 >
                   {section}
                 </a>
               </li>
             )
           )}
-          <li className="mt-4 lg:mt-0">
-            <a
-              href="#"
-              className="inline-block px-4 py-2 text-white bg-purple-600 rounded-lg hover:bg-purple-700"
-            >
-              Components
-            </a>
-          </li>
         </ul>
       </nav>
     </header>

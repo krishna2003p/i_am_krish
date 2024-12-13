@@ -4,43 +4,43 @@ export default function Technology() {
   const projects = [
     { 
       src: "/react.png", 
-      title: "Web Designing", 
+      title: "Web Development", 
       category: "Web Templates" 
     },
     { 
       src: "/nextjs.jpg", 
-      title: "Web Designing", 
+      title: "Web Development", 
       category: "Web Templates" 
     },
     { 
       src: "/python.jpeg", 
-      title: "Web Designing", 
-      category: "Web Templates" 
+      title: "Backend Development", 
+      category: "Software Development" 
     },
     { 
       src: "/fast_api.jpeg", 
-      title: "Web Designing", 
-      category: "Web Templates" 
+      title: "C2C Communication", 
+      category: "Real Time Events Handle" 
     },
     { 
       src: "/java.png", 
-      title: "Web Designing", 
-      category: "Web Templates" 
+      title: "Backend Development", 
+      category: "Software Development" 
     },
     { 
       src: "/elastic.png", 
-      title: "Web Designing", 
-      category: "Web Templates" 
+      title: "Data Store", 
+      category: "Getting Fast Large Amount Of Data" 
     },
     { 
         src: "/kafka.jpeg", 
-        title: "Web Designing", 
-        category: "Web Templates" 
+        title: "Live Streaming", 
+        category: "Handle Large Data RealTime" 
       },
       { 
         src: "/mysql.jpeg", 
-        title: "Web Designing", 
-        category: "Web Templates" 
+        title: "Database Management", 
+        category: "Store Critical Data" 
       },
   ];
 
