@@ -1,0 +1,42 @@
+[
+    { 
+      "src": "/img/react.png", 
+      "title": "Web Development", 
+      "category": "Web Templates" 
+    },
+    { 
+      "src": "/img/nextjs.jpg", 
+      "title": "Web Development", 
+      "category": "Web Templates" 
+    },
+    { 
+      "src": "/img/python.jpeg", 
+      "title": "Backend Development", 
+      "category": "Software Development" 
+    },
+    { 
+      "src": "/img/fast_api.jpeg", 
+      "title": "C2C Communication", 
+      "category": "Real Time Events Handle" 
+    },
+    { 
+      "src": "/img/java.png", 
+      "title": "Backend Development", 
+      "category": "Software Development" 
+    },
+    { 
+      "src": "/img/elastic.png", 
+      "title": "Data Store", 
+      "category": "Getting Fast Large Amount Of Data" 
+    },
+    { 
+        "src": "/img/kafka.jpeg", 
+        "title": "Live Streaming", 
+        "category": "Handle Large Data RealTime" 
+      },
+      { 
+        "src": "/img/mysql.jpeg", 
+        "title": "Database Management", 
+        "category": "Store Critical Data" 
+      }
+  ]

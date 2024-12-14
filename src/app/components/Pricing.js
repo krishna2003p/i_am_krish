@@ -1,50 +1,20 @@
+"use client";
+
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export default function Pricing() {
-  const pricingPlans = [
-    {
-      icon: "/scooter.svg",
-      title: "Free",
-      price: "0.00",
-      frequency: "Month",
-      features: [
-        "accusamus reprehenderit",
-        "provident dolorem",
-        "quos neque",
-        "fugiat quibusdam",
-        null,
-        null,
-      ],
-    },
-    {
-      icon: "/shipped.svg",
-      title: "Basic",
-      price: "9.99",
-      frequency: "Month",
-      features: [
-        "accusamus reprehenderit",
-        "provident dolorem",
-        "quos neque",
-        "fugiat quibusdam",
-        "accusamus laboriosam",
-        null,
-      ],
-    },
-    {
-      icon: "/startup.svg",
-      title: "Premium",
-      price: "99.99",
-      frequency: "Month",
-      features: [
-        "accusamus reprehenderit",
-        "provident dolorem",
-        "quos neque",
-        "fugiat quibusdam",
-        "accusamus laboriosam",
-        "inventore omnis",
-      ],
-    },
-  ];
+  const [pricingPlans, setPricingPlans] = useState([]);
+
+  useEffect(()=>{
+    const getPricingPlans = async () =>{
+      const response = await fetch("/JSON/plans.json");
+      const data = await response.json();
+      setPricingPlans(data);
+    }
+    getPricingPlans()
+  },[])
+  
 
   return (
     <section className="p-16 bg-gray-50" id="pricing">

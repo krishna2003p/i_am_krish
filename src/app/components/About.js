@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
     return (
       <section id="about" className="py-16 bg-gray-50">
@@ -6,10 +8,12 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-12">
             {/* Left Column: Image */}
             <div className="md:w-1/3 flex justify-center">
-              <img
-                src="man.png"
+              <Image
+                src="/img/man.png"
                 alt="Krishna Prajapati"
-                className="rounded-full shadow-lg w-64 h-64 object-cover border-4 border-primary"
+                width={320}
+                height={320}
+                className="rounded-full shadow-lg object-cover border-4 border-primary"
               />
             </div>
   

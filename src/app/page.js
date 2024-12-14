@@ -7,10 +7,12 @@ import Technology from "./components/Technology";
 import Pricing from "./components/Pricing";
 import Hireme from "./components/Hereme";
 import Footer from "./components/Footer";
+import JsonParser from "./components/JsonParser";
 
 export default function Home() {
   return (
    <>
+   {/* <JsonParser /> */}
     <Header />
     <Main/>
     <About/>

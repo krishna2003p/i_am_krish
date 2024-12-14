@@ -1,0 +1,41 @@
+{
+    "projects": [
+      {
+        "title": "JSON Parser",
+        "description": "Parse and validate JSON with ease.",
+        "link": "/playground/jsonparser",
+        "icon": "/img/json_parser.png"
+      },
+      {
+        "title": "DSA Problems",
+        "description": "Solve challenging data structure and algorithm problems.",
+        "link": "/playground/dsa",
+        "icon": "/img/dsa.png"
+      },
+      {
+        "title": "Python",
+        "description": "Dive into Python programming and tools.",
+        "link": "/python",
+        "icon": "/img/python.jpeg"
+      },
+      {
+        "title": "Java",
+        "description": "Learn and practice Java programming.",
+        "link": "/java",
+        "icon": "/img/java.png"
+      },
+      {
+        "title": "Cyber Security",
+        "description": "Explore and strengthen your cybersecurity skills.",
+        "link": "/cyber-security",
+        "icon": "/img/cyber_security.jpeg"
+      },
+      {
+        "title": "Practice Sets",
+        "description": "Test your knowledge with comprehensive practice sets.",
+        "link": "/practice-sets",
+        "icon": "/img/practice_set.jpeg"
+      }
+    ]
+  }
+  

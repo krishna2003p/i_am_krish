@@ -14,6 +14,15 @@ module.exports = {
       fontFamily: {
         'baloo': ['"Baloo Paaji"', 'cursive'],
       },
+      animation: {
+        pulse: "pulse 2s infinite",
+      },
+      keyframes: {
+        pulse: {
+          "0%, 100%": { opacity: 0.4 },
+          "50%": { opacity: 1 },
+        },
+      },
     },
   },
   plugins: [],

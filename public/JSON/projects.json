@@ -1,0 +1,112 @@
+{
+  "projects": [
+    {
+      "name": "Autodialer",
+      "description": "A scalable, efficient outbound calling system built with ReactJS, Python, and FastAPI. Designed to handle high call volumes with features like call scheduling, analytics, and real-time status updates.",
+      "technologies": ["ReactJS", "Python", "FastAPI"],
+      "features": [
+        "Efficient call scheduling and management",
+        "Real-time call analytics and status updates",
+        "User-friendly dashboard for admins"
+      ],
+      "githubUrl": "https://github.com/krishna2003p/Autodialer-",
+      "image": "/img/autodialer.png"
+    },
+    {
+      "name": "Smart City (Desktop Application)",
+      "description": "An intuitive Java-based desktop application for streamlined urban management. It integrates modules like traffic monitoring, public services, and resource allocation to simplify city operations.",
+      "technologies": ["Java", "Swing", "JDBC", "MySQL"],
+      "features": [
+        "Traffic monitoring and control",
+        "Public service management dashboards",
+        "Citizen feedback system"
+      ],
+      "githubUrl": "https://github.com/krishna2003p/Smart-City",
+      "image": "/img/smart-city.png"
+    },
+    {
+      "name": "ATM Banking",
+      "description": "A secure Java application simulating ATM functions like withdrawals, deposits, and balance inquiries. Focused on user-friendly interaction and robust security measures.",
+      "technologies": ["Java", "Swing"],
+      "features": [
+        "Secure PIN-based login",
+        "Core ATM operations like withdrawals and deposits",
+        "Real-time balance updates"
+      ],
+      "githubUrl": "https://github.com/krishna2003p/ATM-Banking",
+      "image": "/img/atm.png"
+    },
+    {
+      "name": "Institute Management",
+      "description": "A ReactJS and Elasticsearch-based platform for managing student and staff data, providing seamless data retrieval and management capabilities.",
+      "technologies": ["ReactJS", "Elasticsearch"],
+      "features": [
+        "Comprehensive data management for institutions",
+        "Fast and efficient Elasticsearch queries",
+        "Role-based access for staff and admin users"
+      ],
+      "githubUrl": "https://github.com/krishna2003p/institutemanagement",
+      "image": "/img/college.webp"
+    },
+    {
+      "name": "Atithi Agman",
+      "description": "A ReactJS and MySQL platform for managing guest arrivals and food arrangements. Designed for efficiency in tracking and planning guest-related activities.",
+      "technologies": ["ReactJS", "MySQL"],
+      "features": [
+        "Guest data management",
+        "Food arrangement tracking and updates",
+        "Customizable dashboard for event managers"
+      ],
+      "githubUrl": "https://github.com/krishna2003p/atithiagman",
+      "image": "/img/atithi.jpeg"
+    },
+    {
+      "name": "Kwix.Live",
+      "description": "A ReactJS and Elasticsearch platform aimed at simplifying student and staff data management. Built for high performance and real-time updates.",
+      "technologies": ["ReactJS", "Elasticsearch"],
+      "features": [
+        "Real-time data updates for users",
+        "Advanced Elasticsearch integration for fast retrieval",
+        "Scalable design supporting large datasets"
+      ],
+      "githubUrl": "https://github.com/krishna2003p/kwixlive",
+      "image": "/img/kwix.png"
+    },
+    {
+      "name": "Resume Maker",
+      "description": "A Java application to generate professional resumes based on user input. Includes multiple templates and options for dynamic customization.",
+      "technologies": ["Java", "Swing", "File Handling"],
+      "features": [
+        "Template selection for different resume styles",
+        "Dynamic customization of sections and layout",
+        "Export options for PDF and Word formats"
+      ],
+      "githubUrl": "dummy",
+      "image": "/img/dummy.jpeg"
+    },
+    {
+      "name": "Bank Management System",
+      "description": "A Java-based application for automating banking operations like account management and transaction tracking. Ensures accuracy and security in financial processes.",
+      "technologies": ["Java", "JDBC", "MySQL"],
+      "features": [
+        "Automated transaction processing",
+        "Detailed account and transaction histories",
+        "Secure login system for customers"
+      ],
+      "githubUrl": "dummy",
+      "image": "/img/dummy.jpeg"
+    },
+    {
+      "name": "Marksheet Generator",
+      "description": "A tool for generating academic marksheets and reports. Automates grade calculation and provides printable, well-structured outputs.",
+      "technologies": ["Java", "Swing", "JDBC", "MySQL"],
+      "features": [
+        "Automated grade calculation",
+        "Customizable templates for marksheet design",
+        "Export options for printing and records"
+      ],
+      "githubUrl": "dummy",
+      "image": "/img/dummy.jpeg"
+    }
+  ]
+}

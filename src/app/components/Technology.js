@@ -1,48 +1,26 @@
+"use client";
+
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Technology() {
-  const projects = [
-    { 
-      src: "/react.png", 
-      title: "Web Development", 
-      category: "Web Templates" 
-    },
-    { 
-      src: "/nextjs.jpg", 
-      title: "Web Development", 
-      category: "Web Templates" 
-    },
-    { 
-      src: "/python.jpeg", 
-      title: "Backend Development", 
-      category: "Software Development" 
-    },
-    { 
-      src: "/fast_api.jpeg", 
-      title: "C2C Communication", 
-      category: "Real Time Events Handle" 
-    },
-    { 
-      src: "/java.png", 
-      title: "Backend Development", 
-      category: "Software Development" 
-    },
-    { 
-      src: "/elastic.png", 
-      title: "Data Store", 
-      category: "Getting Fast Large Amount Of Data" 
-    },
-    { 
-        src: "/kafka.jpeg", 
-        title: "Live Streaming", 
-        category: "Handle Large Data RealTime" 
-      },
-      { 
-        src: "/mysql.jpeg", 
-        title: "Database Management", 
-        category: "Store Critical Data" 
-      },
-  ];
+  const [projects, setProjects] = useState([]);
+
+  // Fetch Projects from json file.............
+    useEffect(()=>{
+      const fetchProjects = async () => {
+        try{
+          const response = await fetch("/JSON/technology.json");
+          const data = await response.json();
+          setProjects(data);
+        }
+        catch{
+          console.log("Some error occured fetching projects");
+        }
+      };
+      fetchProjects();
+    },[]);
+  
 
   return (
     <section className="p-16 bg-gray-50" id="portfolio">
