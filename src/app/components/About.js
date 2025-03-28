@@ -38,7 +38,7 @@ export default function About() {
                 Let’s connect and make something extraordinary!
               </p>
               <a
-                href="/krishna.pdf"
+                href="/Krishna_Prajapati.pdf"
                 download="Krishna_Prajapati_CV"
                 className="inline-block py-3 px-6 rounded-full bg-primary text-[#523D85] font-medium hover:bg-[#523D85] hover:text-white transition-all border"
               >
