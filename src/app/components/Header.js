@@ -1,9 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -11,11 +14,10 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // Adjust the threshold as needed
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -66,23 +68,35 @@ export default function Header() {
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           } lg:static lg:transform-none lg:flex lg:items-center lg:w-auto lg:bg-transparent lg:shadow-none`}
         >
-          {["Home", "About", "Portfolio", "Contact"].map(
-            (section) => (
-              <li
-                key={section}
-                className={`text-center font-baloo my-4 p-2 lg:my-0 transition-colors duration-300 ${
-                  isScrolled ? "text-[#695AA6]" : "text-gray-800 lg:text-white"
-                }`}
+          {["Home", "About", "Portfolio", "Contact"].map((section) => (
+            <li
+              key={section}
+              className={`text-center font-baloo my-4 p-2 lg:my-0 transition-colors duration-300 ${
+                isScrolled ? "text-[#695AA6]" : "text-gray-800 lg:text-white"
+              }`}
+            >
+              <a
+                href={`#${section.toLowerCase()}`} // Scroll to section
+                className="block hover:text-[#523D85] transition-all"
               >
-                <a
-                  href={`#${section.toLowerCase()}`}
-                  className="block hover:text-[#523D85] transition-all"
-                >
-                  {section}
-                </a>
-              </li>
-            )
-          )}
+                {section}
+              </a>
+            </li>
+          ))}
+
+          {/* Login (Opens a new page) */}
+          <li className="text-center font-baloo my-4 p-2 lg:my-0">
+            <Link
+              href="/login"
+              className={`block px-4 py-2 rounded transition-all ${
+                pathname === "/login"
+                  ? "bg-[#523D85] text-white" // Highlight when on login page
+                  : "text-[#695AA6] hover:bg-[#523D85] hover:text-white"
+              }`}
+            >
+              Login
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

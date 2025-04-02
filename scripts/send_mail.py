@@ -12,8 +12,8 @@ class MailSender:
         self.SMTP_PORT = 587
         self.SENDER_EMAIL = "krishna.628145@gmail.com"
         self.APP_PASSWORD = "xmgcuzkdfccemqva"
-        self.HTML_FILE_PATH = "mail.html"
-        self.RESUME_PATH = "Krishna_Prajapati_CV.pdf"
+        self.HTML_FILE_PATH = "/home/krishna/Desktop/MyProject/Web/i_am_krish/public/mail.html"
+        self.RESUME_PATH = "/home/krishna/Desktop/MyProject/Web/i_am_krish/public/Krishna_Prajapati.pdf"
 
     #function for sending mail
     def send_mail(self,receiver_email, body, subject):
