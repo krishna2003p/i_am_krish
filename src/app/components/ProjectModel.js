@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Modal({ isOpen, onClose, project }) {
   if (!isOpen || !project) return null;
 
@@ -12,7 +14,7 @@ export default function Modal({ isOpen, onClose, project }) {
           &times;
         </button>
         <div className="text-center">
-          <img
+          <Image
             src={project.image}
             alt={project.name}
             className="mx-auto rounded-lg mb-6 w-48 h-48 object-cover shadow-lg"
