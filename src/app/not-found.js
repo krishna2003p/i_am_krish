@@ -33,8 +33,9 @@ export default function PageNotFound() {
           4<span className="text-purple-500">0</span>4
         </h1>
         <p className="mt-4 text-lg font-medium text-gray-300">
-          Oops! The page you're looking for doesn't exist.
+          Oops! The page you&apos;re looking for doesn&apos;t exist.
         </p>
+
         <p className="mt-2 text-sm text-gray-400">
           But hey, let’s take you back to the right path.
         </p>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const dsaTopicsData = {
     array: [
       {
@@ -131,7 +133,7 @@ export const dsaTopicsData = {
     <div
       className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center space-y-4 border-2 border-transparent hover:border-teal-400 hover:bg-gradient-to-r from-green-500 to-teal-500 hover:text-white transform hover:scale-105 transition-all duration-300"
     >
-      <img
+      <Image
         src={icon}
         alt={title}
         width={80}
@@ -142,4 +144,3 @@ export const dsaTopicsData = {
       <p className="text-gray-600 text-sm transition-all duration-300 ease-in-out transform hover:text-gray-200">{description}</p>
     </div>
   );
-  
