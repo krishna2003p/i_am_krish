@@ -17,6 +17,8 @@ export default function Modal({ isOpen, onClose, project }) {
           <Image
             src={project.image}
             alt={project.name}
+            width={300}
+            height={250}
             className="mx-auto rounded-lg mb-6 w-48 h-48 object-cover shadow-lg"
           />
           <h3 className="text-3xl font-bold text-gray-800 mb-4">{project.name}</h3>

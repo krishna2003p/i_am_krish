@@ -65,7 +65,7 @@ export default function StyledForm() {
                 placeholder={placeholder}
                 value={formData[name]}
                 onChange={handleChange}
-                className="pl-10 w-full p-3 border rounded-xl focus:ring-2 focus:ring-indigo-400 outline-none"
+                className="pl-10 w-full p-3 border rounded-xl focus:ring-2 focus:ring-indigo-400 outline-none text-black"
                 required
               />
             </div>

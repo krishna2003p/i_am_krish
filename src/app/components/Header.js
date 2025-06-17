@@ -68,7 +68,7 @@ export default function Header() {
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           } lg:static lg:transform-none lg:flex lg:items-center lg:w-auto lg:bg-transparent lg:shadow-none`}
         >
-          {["Home", "About", "Portfolio", "Contact"].map((section) => (
+          {["Home", "About", "Projects", "Contact"].map((section) => (
             <li
               key={section}
               className={`text-center font-baloo my-4 p-2 lg:my-0 transition-colors duration-300 ${

@@ -8,6 +8,7 @@ import Pricing from "./components/Pricing";
 import Hireme from "./components/Hereme";
 import Footer from "./components/Footer";
 import JsonParser from "./components/JsonParser";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
@@ -16,12 +17,14 @@ export default function Home() {
     <Header />
     <Main/>
     <About/>
-    <Projects/>
+    <Experience/>
     <Technology/>
-    <Pricing/>
+    <Projects/>
+    {/* <Pricing/> */}
     <Hireme/>
     <Contact/>
     <Footer/>
+    
    </>
   );
 }
