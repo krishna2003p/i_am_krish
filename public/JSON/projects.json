@@ -3,6 +3,7 @@
     {
       "name": "Autodialer",
       "description": "A scalable, efficient outbound calling system built with ReactJS, Python, and FastAPI. Designed to handle high call volumes with features like call scheduling, analytics, and real-time status updates.",
+      "short_description": "Outbound calling system with scheduling, analytics, and real-time updates.",
       "technologies": ["ReactJS", "Python", "FastAPI"],
       "features": [
         "Efficient call scheduling and management",
@@ -13,8 +14,36 @@
       "image": "/img/autodialer.png"
     },
     {
-      "name": "Smart City (Desktop Application)",
+      "name": "Wab Chat Application",
+      "description": "A real-time WhatsApp-based chat application integrated with CRMs of various vendors using WhatsApp Business APIs. Features include vendor-specific API integration (Meta, DoubleTick, AiSensy, Wati, Pinnacle), real-time messaging, and calling functionality.",
+      "short_description": "Multi-vendor WhatsApp CRM integration with real-time chat and call features.",
+      "technologies": [
+        "WebSocket",
+        "Kafka",
+        "Elasticsearch",
+        "MySQL",
+        "Node.js",
+        "Python",
+        "JWT Token",
+        "Next.js",
+        "ReactJS"
+      ],
+      "features": [
+        "Real-time messaging using WebSocket",
+        "CRM integration with vendors like Meta, DoubleTick, AiSensy, Wati, and Pinnacle",
+        "Calling feature integration",
+        "Kafka consumer-producer pipeline for reporting",
+        "Fast message search using Elasticsearch",
+        "Data backup with MySQL",
+        "Secure user access with JWT token"
+      ],
+      "githubUrl": "dummy",
+      "image": "/img/chat.png"
+    },
+    {
+      "name": "Smart City",
       "description": "An intuitive Java-based desktop application for streamlined urban management. It integrates modules like traffic monitoring, public services, and resource allocation to simplify city operations.",
+      "short_description": "Java app for traffic, services, and city resource management.",
       "technologies": ["Java", "Swing", "JDBC", "MySQL"],
       "features": [
         "Traffic monitoring and control",
@@ -27,6 +56,7 @@
     {
       "name": "ATM Banking",
       "description": "A secure Java application simulating ATM functions like withdrawals, deposits, and balance inquiries. Focused on user-friendly interaction and robust security measures.",
+      "short_description": "ATM simulation with deposits, withdrawals, PIN login, and balance checks.",
       "technologies": ["Java", "Swing"],
       "features": [
         "Secure PIN-based login",
@@ -39,6 +69,7 @@
     {
       "name": "Institute Management",
       "description": "A ReactJS and Elasticsearch-based platform for managing student and staff data, providing seamless data retrieval and management capabilities.",
+      "short_description": "Manages institutional data with ReactJS UI and Elasticsearch search.",
       "technologies": ["ReactJS", "Elasticsearch"],
       "features": [
         "Comprehensive data management for institutions",
@@ -51,6 +82,7 @@
     {
       "name": "Atithi Agman",
       "description": "A ReactJS and MySQL platform for managing guest arrivals and food arrangements. Designed for efficiency in tracking and planning guest-related activities.",
+      "short_description": "Tracks guest entries and food planning using ReactJS and MySQL.",
       "technologies": ["ReactJS", "MySQL"],
       "features": [
         "Guest data management",
@@ -63,6 +95,7 @@
     {
       "name": "Kwix.Live",
       "description": "A ReactJS and Elasticsearch platform aimed at simplifying student and staff data management. Built for high performance and real-time updates.",
+      "short_description": "Live data management for students and staff using Elasticsearch.",
       "technologies": ["ReactJS", "Elasticsearch"],
       "features": [
         "Real-time data updates for users",
@@ -73,8 +106,22 @@
       "image": "/img/kwix.png"
     },
     {
+      "name": "Geo Bricks",
+      "description": "A tool for generating academic marksheets and reports. Automates grade calculation and provides printable, well-structured outputs.",
+      "short_description": "Generates printable marksheets with automated grade calculations.",
+      "technologies": ["ReactJS", "Swing", "JDBC", "MySQL"],
+      "features": [
+        "Automated grade calculation",
+        "Customizable templates for marksheet design",
+        "Export options for printing and records"
+      ],
+      "githubUrl": "dummy",
+      "image": "/img/dummy.jpeg"
+    },
+    {
       "name": "Resume Maker",
       "description": "A Java application to generate professional resumes based on user input. Includes multiple templates and options for dynamic customization.",
+      "short_description": "Creates professional resumes from input using templates and export formats.",
       "technologies": ["Java", "Swing", "File Handling"],
       "features": [
         "Template selection for different resume styles",
@@ -85,8 +132,9 @@
       "image": "/img/dummy.jpeg"
     },
     {
-      "name": "Bank Management System",
+      "name": "Bank Management",
       "description": "A Java-based application for automating banking operations like account management and transaction tracking. Ensures accuracy and security in financial processes.",
+      "short_description": "Java app for secure account and transaction management.",
       "technologies": ["Java", "JDBC", "MySQL"],
       "features": [
         "Automated transaction processing",
@@ -99,6 +147,7 @@
     {
       "name": "Marksheet Generator",
       "description": "A tool for generating academic marksheets and reports. Automates grade calculation and provides printable, well-structured outputs.",
+      "short_description": "Generates student marksheets with auto-grading and export features.",
       "technologies": ["Java", "Swing", "JDBC", "MySQL"],
       "features": [
         "Automated grade calculation",

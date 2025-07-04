@@ -40,32 +40,32 @@ export default function Projects() {
         <h6 className="text-4xl font-bold mb-12 text-[#695AA6] font-baloo">
           Projects
         </h6>
+        
         <div className="flex flex-wrap -mx-4">
           {projects.map((project, index) => (
-            <div key={index} className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-              <div className="relative bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group flex flex-col h-full">
-                <div className="p-6 flex-grow">
+            <div key={index} className={`group w-full h-80 sm:w-1/2 lg:w-1/4 p-4 mb-8 transform transition duration-300 ${index % 2 === 0 ? '-translate-y-8' : 'translate-y-8'
+              }`}>
+              <div className="relative rounded-tl-3xl rounded-bl-3xl rounded-br-3xl hover:bg-gray-300 transition duration-300 h-full border border-gray-400 ">
+                <div className="p-6 flex-grow text-left">
                   <div className="mb-4 overflow-hidden">
                     <Image
                       src={project.image}
                       alt={project.name}
-                      width={80}
-                      height={80}
-                      className="mx-auto group-hover:scale-110 transition-transform duration-300"
+                      width={60}
+                      height={60}
+                      className="group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <h6 className="text-xl font-semibold text-gray-800 mb-2">
+                  <h6 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-[#695AA6] transition-colors duration-300">
                     {project.name}
                   </h6>
-                  <p className="text-gray-600 truncate">{project.description}</p>
+                  <p className="text-gray-600 mt-5">{project.short_description}</p>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button
-                    onClick={() => openModal(project)}
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
-                  >
-                    Explore
-                  </button>
+                <div className="text-start ms-5 mt-0 opacity-0 group-hover:opacity-100 transform transition duration-300 translate-x-0 group-hover:translate-x-1">
+                  <p className="flex items-center gap-1 text-gray-700 cursor-pointer hover:text-blue-700 " onClick={() => openModal(project)}>
+                    Learn More
+                    <span> → </span>
+                  </p>
                 </div>
               </div>
             </div>
