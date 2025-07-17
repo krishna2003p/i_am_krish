@@ -32,7 +32,7 @@ const skillsData = [
 const TechnicalSkills = () => {
   return (
     <section className="bg-gray-50 text-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-12 item-center justify-center gap-8 ms-5 px-20">
+      <div className="grid grid-cols-1 md:grid-cols-12 items-start gap-8">
         {/* left side column */}
         <div className="col-span-4">
             <h2 className="text-[#695AA6] font-baloo font-bold text-5xl ms-5">Technical Skills</h2>
@@ -45,11 +45,11 @@ const TechnicalSkills = () => {
           {skillsData.map((category, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:bg-gray-300 transition duration-300"
+              className="bg-white p-5 sm:p-6 rounded-lg shadow-lg border border-gray-200 hover:bg-gray-300 transition duration-300"
             >
               <div className="flex items-center mb-4">
                 {category.icon}
-                <h3 className="text-xl font-bold ml-3 text-[#695AA6]">
+                <h3 className="text-lg sm:text-xl font-bold ml-3 text-[#695AA6]">
                   {category.category}
                 </h3>
               </div>
@@ -57,7 +57,7 @@ const TechnicalSkills = () => {
                 {category.items.map((item, itemIndex) => (
                   <span
                     key={itemIndex}
-                    className="bg-gray-100 text-[#695AA6] px-3 py-1 rounded-full text-sm font-medium hover:bg-[#695AA6] transition duration-300 cursor-pointer hover:text-white"
+                    className="bg-gray-100 text-[#695AA6] px-3 py-1 rounded-full text-xs sm:text-sm font-medium hover:bg-[#695AA6] transition duration-300 cursor-pointer hover:text-white"
                   >
                     {item}
                   </span>
